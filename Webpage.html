@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lucky Nmose - Personal Webpage</title>
+    <style>
+        body {
+            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            line-height: 1.6;
+            background-color: #f4f4f4;
+        }
+        header, footer {
+            background-color: #0044cc;
+            color: white;
+            text-align: center;
+            padding: 1em 0;
+        }
+        nav {
+            background-color: #003399;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+        }
+        nav a {
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            transition: background-color 0.3s;
+        }
+        nav a:hover {
+            background-color: #002266;
+        }
+        .container {
+            padding: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+        }
+        .section {
+            margin-bottom: 40px;
+        }
+        h1, h2, h3, h4 {
+            font-weight: 600;
+            margin: 0 0 10px;
+        }
+        h2 {
+            border-bottom: 2px solid #0044cc;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+        p, li {
+            margin: 0 0 10px;
+        }
+        .slider {
+            display: flex;
+            overflow-x: auto;
+            gap: 10px;
+        }
+        .slider img {
+            width: 100%;
+            max-width: 300px;
+            margin-right: 10px;
+            border-radius: 8px;
+        }
+        .contact-form {
+            display: flex;
+            flex-direction: column;
+            max-width: 400px;
+            margin: 0 auto;
+            gap: 10px;
+        }
+        .contact-form input, .contact-form textarea {
+            padding: 10px;
+            font-size: 1em;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        .contact-form button {
+            padding: 10px;
+            background-color: #0044cc;
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 4px;
+            transition: background-color 0.3s;
+        }
+        .contact-form button:hover {
+            background-color: #003399;
+        }
+        footer {
+            margin-top: 40px;
+            padding: 20px;
+            background: #0044cc;
+        }
+        @media (max-width: 600px) {
+            nav {
+                flex-direction: column;
+            }
+            nav a {
+                width: 100%;
+                padding: 10px;
+            }
+            .slider img {
+                max-width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Lucky Nmose</h1>
+        <p>Aspiring Computer Science Professional with Expertise in Programming, Web Development, Data Science, and Cybersecurity</p>
+    </header>
+    <nav>
+        <a href="#about">About Me</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#contact">Contact Information</a>
+        <a href="#resume">Resume</a>
+    </nav>
+    <div class="container">
+        <section id="about" class="section">
+            <h2>About Me</h2>
+            <p>I am a highly motivated and detail-oriented individual currently pursuing a Bachelor's degree in Computer Science at the University of Economics and Human Sciences in Warsaw. With a robust academic background and practical experience in various IT practices, I possess strong competencies in programming languages including Python, PHP, Java, and C++. My expertise extends to web technologies such as HTML, CSS, JavaScript, and React, as well as database management with MySQL and PhpMyAdmin.</p>
+            <p>I have demonstrated success in roles such as a Traveller Experience Counselor at CWT, where I fostered exceptional client relationships and consistently exceeded service goals. Additionally, as a Secretary at Zion Properties Ventures, I efficiently managed office operations and performed key administrative tasks.</p>
+            <p>My skill set includes data analysis and visualization, proficiency in tools like GitHub, REST API, Postman, and Docker, and a solid understanding of network technologies and cybersecurity principles. I am adept at using Microsoft Office Suite and have hands-on experience with machine learning concepts and operating systems like Windows and Linux.</p>
+            <p>Certified in areas including Blue Team Junior Analyst and Qualys Certified Specialist, I am committed to continuous learning and professional development. I am enthusiastic about leveraging my technical expertise, strong learning drive, and commitment to excellence to bring value to any team and contribute to organizational success.</p>
+        </section>
+        <section id="projects" class="section">
+            <h2>Projects</h2>
+            <div class="project">
+                <h3>Docker-Project</h3>
+                <p>Description: A PHP-based web application for managing users and administrators. The application includes user authentication, and CRUD functionalities for both users and administrators. It is containerized using Docker, making it easy to deploy across different environments.</p>
+                <p>Technologies Used: PHP, HTML, CSS, MySQL, Docker</p>
+                <img src="https://raw.githubusercontent.com/NLC001/-My-Webpage/main/Screenshot%202024-07-15%20185104.png" alt="Screenshot of Docker-Project">
+                <img src="https://raw.githubusercontent.com/NLC001/-My-Webpage/main/Screenshot%202024-07-15%20185148.png" alt="Screenshot of Docker-Project">
+                <h4>Key Features:</h4>
+                <ul>
+                    <li><strong>User Authentication:</strong> Users can log in with their username and password. Admins have access to additional functionalities.</li>
+                    <li><strong>User Management:</strong> Admins can view a list of registered users and perform CRUD operations on users (Create, Read, Update, Delete).</li>
+                </ul>
+                <h4>Prerequisites:</h4>
+                <p>Before you begin, ensure you have Docker installed on your local machine.</p>
+                <h4>Installation:</h4>
+                <ol>
+                    <li>Clone the repository: <code>git clone https://github.com/NLC001/Docker-Project</code> or download the file.</li>
+                    <li>Build the Docker Image:
+                        <ul>
+                            <li>Navigate to the repository: <code>cd your-repo</code></li>
+                            <li>Build the image: <code>docker build -t your-image-name .</code></li>
+                        </ul>
+                    </li>
+                    <li>Configure the Database:
+                        <ul>
+                            <li>Import the database schema from the provided SQL file (computers.sql).</li>
+                        </ul>
+                    </li>
+                    <li>Start the Docker Container:
+                        <ul>
+                            <li>Run the container: <code>docker run -p 8080:80 -d --name your-container-name your-image-name</code> (replace with any port of your choice)</li>
+                        </ul>
+                    </li>
+                </ol>
+                <h4>Usage:</h4>
+                <ol>
+                    <li>Open the browser and navigate to <code>http://localhost:5555/login.php</code>.</li>
+                    <li>Log in with your username and password.</li>
+                    <li>Admins will be redirected to <code>index.php</code> where they can manage entries.</li>
+                    <li>Users will have access to their respective dashboard.</li>
+                </ol>
+                <p>Code: <a href="https://github.com/NLC001/Docker-Project" target="_blank">View on GitHub</a></p>
+            </div>
+            <!-- Add more projects as needed -->
+        </section>
+
+        <section id="contact" class="section">
+            <h2>Contact Information</h2>
+            <p>Email: <a href="mailto:Luckynmose3.0@gmail.com">Luckynmose3.0@gmail.com</a></p>
+            <p>Phone: <a href="tel:+48729416830">+48729416830</a></p>
+            <p>Location: Warsaw, Poland</p>
+            <p>LinkedIn: <a href="https://linkedin.com/in/lucky-nmose-304865230" target="_blank">linkedin.com/in/lucky-nmose-304865230</a></p>
+            <p>GitHub: <a href="https://github.com/NLC001" target="_blank">github.com/NLC001</a></p>
+            <h3>Contact Form</h3>
+            <form class="contact-form" action="contact.php" method="POST">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+        <section id="resume" class="section">
+            <h2>Resume</h2>
+            <h3>Education</h3>
+            <p><strong>Bachelor of Computer Science</strong><br>
+                University of Economics and Human Sciences in Warsaw, Poland<br>
+                10/2021 - Present</p>
+            <h3>Courses</h3>
+            <ul>
+                <li>Programming Fundamentals</li>
+                <li>Relational Databases and SQL</li>
+                <li>Web Development with JavaScript, HTML, CSS, and PHP</li>
+                <li>Network Technologies</li>
+                <li>Operating Systems</li>
+                <li>Cloud Oriented Web Applications</li>
+                <li>Security Of Web Applications</li>
+                <li>Artificial Intelligence & Data Science</li>
+                <li>Data Structures & Algorithms</li>
+            </ul>
+            <h3>Work Experience</h3>
+            <p><strong>Traveller Experience Counselor - TEC I</strong><br>
+                CWT, Warsaw, Poland<br>
+                08/2022 - 10/2022</p>
+            <ul>
+                <li>Fostered exceptional relationships with international clients, ensuring daily engagement and satisfaction.</li>
+                <li>Surpassed service goals, consistently earning top ratings and enhancing overall customer satisfaction.</li>
+                <li>Provided round-the-clock assistance during emergencies, demonstrating a commitment to immediate issue resolution.</li>
+                <li>Booked diverse modes of transportation through global distribution systems and actively engaged in sales-related tasks.</li>
+            </ul>
+            <p><strong>Secretary</strong><br>
+                Zion Properties Ventures, Real Estate Management<br>
+                01/2019 - 09/2021</p>
+            <ul>
+                <li>Organized and maintained files, performed administrative tasks, and managed office operations.</li>
+                <li>Scheduled appointments for clients, prepared reports, and edited documents.</li>
+                <li>Efficiently managed day-to-day office operations.</li>
+            </ul>
+            <h3>Skills</h3>
+            <ul>
+                <li>Programming Languages: Python, PHP, Java, C++, SQL</li>
+                <li>Web Technologies: HTML, CSS, JavaScript, React</li>
+                <li>Databases: MySQL, PhpMyAdmin</li>
+                <li>Data Analysis and Visualization: Proficient in MS Excel, Basic knowledge of visualization tools (e.g., Matplotlib, Pandas, Numpy)</li>
+                <li>Microsoft Office Suite: Proficient in Word, Intermediate in Excel, PowerPoint, Outlook</li>
+                <li>Tools: GitHub, REST API, Postman, Cisco, Docker, Wireshark, Jupyter Notebook</li>
+                <li>Operating Systems: Windows, Linux (Command line)</li>
+                <li>Communication: Strong written and verbal skills</li>
+                <li>Adaptability: Ability to work under pressure, multitask, and learn quickly</li>
+                <li>Teamwork: Effective collaborator with problem-solving abilities</li>
+                <li>Machine Learning Concepts: (Decision Trees, Random Forests, Neural Networks, SVM, Linear and Logistic Regression)</li>
+                <li>Network Technologies: Basic knowledge of networking principles</li>
+                <li>Cybersecurity: Risk Assessment, Vulnerability Scanning, Security Principles</li>
+            </ul>
+            <h3>Certifications</h3>
+            <ul>
+                <li>Blue Team Junior Analyst (07/2024 - Present)</li>
+                <li>Qualys Certified Specialist (06/2023 - Present)</li>
+                <li>OPSWAT Academy (01/2023 - Present)</li>
+                <li>NIST - Risk Management Framework For Systems And Organizations Introductory course (08/2023 - Present)</li>
+                <li>Cisco - Introduction To Cybersecurity (07/2023 - Present)</li>
+                <li>Splunk - Splunk Free Training (08/2023 - Present)</li>
+            </ul>
+        </section>
+    </div>
+    <footer>
+        <p>&copy; 2024 Lucky Nmose</p>
+    </footer>
+</body>
+</html>
